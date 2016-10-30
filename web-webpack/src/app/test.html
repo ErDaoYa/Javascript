@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>我的博客</title>
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link rel="stylesheet" href="../js/cmd/vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- Loading Flat UI -->
+    <link rel="stylesheet" href="../js/model/flat/css/flat-ui.min.css">
+    <style>
+      .login {
+        position: relative;
+        padding: 38px 38px 267px;
+        margin-bottom: 77px;
+        color: #fff;
+        background: url(../js/model/flat/img/login/imac.png) 0 0 no-repeat  ;
+        background-size: 940px 778px;
+        background-position: center;
+      }
+      .login-screen {
+        position: relative;
+        min-height: 473px;
+        padding: 123px 199px 33px 306px;
+        background-color: rgba(26, 188, 156, 0.05);
+        width: auto;
+        right: inherit;
+      }
+    </style>
+  </head>
+  <body style="background: #1ABC9C">
+    <div class="container">
+      <div class="row demo-row">
+        <div class="col-xs-12">
+          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">navigation</span>
+              </button>
+              <a class="navbar-brand" href="#">主页</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#fakelink">博客<span class="navbar-unread">1</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">消息<b class="caret"></b></a>
+                  <span class="dropdown-arrow"></span>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="#fakelink">关于我</a></li>
+               </ul>
+               <form class="navbar-form navbar-right" action="#" role="search">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" id="navbarInput-01" type="search" placeholder="搜索">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn"><span class="fui-search"></span></button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div><!-- /.navbar-collapse -->
+          </nav><!-- /navbar -->
+        </div>
+      </div> <!-- /row -->
+      <div style="">
+        <div class="login">
+          <div class="login-screen">
+            <div class="login-icon">
+              <img src="../js/model/flat/img/login/icon.png" alt="Welcome to Mail App" />
+              <h4>欢迎光临</h4>
+            </div>
+            <div class="login-form">
+              <div class="form-group">
+                <input type="text" class="form-control login-field" value="" placeholder="用户名" id="login-name" />
+                <label class="login-field-icon fui-user" for="login-name"></label>
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control login-field" value="" placeholder="密码" id="login-pass" />
+                <label class="login-field-icon fui-lock" for="login-pass"></label>
+              </div>
+
+              <a class="btn btn-primary btn-lg btn-block" href="#">Log in</a>
+              <a class="login-link" href="#">Lost your password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
